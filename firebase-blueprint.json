@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "Session": {
+      "title": "Session",
+      "description": "Logs of user interactions and game sessions.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The UID of the user." },
+        "characterName": { "type": "string", "description": "Name of the toy character." },
+        "difficulty": { "type": "integer", "description": "Game difficulty level." },
+        "timestamp": { "type": "string", "format": "date-time", "description": "When the session occurred." },
+        "toyDescription": { "type": "string", "description": "Description of the toy seen by AI." }
+      },
+      "required": ["userId", "timestamp"]
+    }
+  },
+  "firestore": {
+    "sessions": {
+      "schema": "Session",
+      "description": "Collection of game sessions."
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Wobble",
+  "description": "An interactive children's storyteller that turns toys into math game characters using Gemini Live API.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
